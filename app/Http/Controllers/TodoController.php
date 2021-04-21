@@ -46,22 +46,9 @@ class TodoController extends Controller
      */
     public function show(Test $test)
     {
-        $item = Test::where('id', $test->id)->first();
-        if ($item) {
-            return response()->json([
-                'message' => 'OK',
-                'data' => $item
-            ],
-                200
-            );
-        } else {
-            return response()->json([
-                'message' => 'Not found',
-            ],
-                404
-            );
-        }
+        //
     }
+
 
     /**
      * Update the specified resource in storage.
